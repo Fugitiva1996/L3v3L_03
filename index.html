@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>  𝐥͒𝟑ͩ𝐕̐̍𝟑̿ͩ́ͧ̚𝐋̓̇̽ͨ͂̚_͌𝟑ͯ͋̔ </title>
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+
+    <!-- PAQUETERIA A-FRAME COMPONENT -PARA PARTICULAS -->
+
+    <script src="https://unpkg.com/aframe-animation-component@3.2.1/dist/aframe-animation-component.min.js"></script>
+    <script src="https://unpkg.com/aframe-particle-system-component@1.0.x/dist/aframe-particle-system-component.min.js"></script>
+    <script src="https://unpkg.com/aframe-extras.ocean@%5E3.5.x/dist/aframe-extras.ocean.min.js"></script>
+    <script src="https://unpkg.com/aframe-gradient-sky@1.0.4/dist/gradientsky.min.js"></script>
+
+    <script src="js/aframe-spe-particles-component.js"></script>
+    <script src="js/entended-was-contols.js"></script>
+
+     <!--ESTE ES EL CODIGO PARA GIFS  -->
+     <script src="ttps://rawgit.com/mayognaise/aframe-gif-component/master/dist/aframe-gif-component.min.js"></script>
+     <script src="https://rawgit.com/mayognaise/aframe-gif-shader/master/dist/aframe-gif-shader.min.js"></script>
+     <script  src ="https://unpkg.com/aframe-spritesheet-component/dist/aframe-spritesheet-component.min.js " ></script> 
+     <a-scene> 
+
+<a-assets>
+
+    <img id="pisobaño" src="./assets/pisobaño.jpeg">
+
+<img id="espejo" src="./assets/espejobaño.png">
+<img id="verde" src="./assets/paredbaño.jpeg">
+
+<img id="ollo" src="./assets/ollo.png">
+
+<!--CIELO-->
+
+<img id="c1" src="./assets/c1.jpg">
+<img id="c2" src="./assets/c2.jpg">
+<img id="c3" src="./assets/c3.jpeg">
+<img id="c4" src="./assets/c4.jpeg">
+<img id="c5" src="./assets/c5.jpeg">
+<img id="c6" src="./assets/c6.jpeg">
+
+<img id="muro" src="./assets/muro.png">
+<img id="textura" src="./assets/pared.png">
+<img id="alfombra" src="./assets/alfombra.png">
+<img id="1" src="./assets/1.png">
+<img id="2" src="./assets/2.png">
+<img id="k" src="./assets/boka.png">
+
+<img id="exit" src="./assets/exx.png">
+<img id="ev" src="./assets/RDE.png">
+<img id="muro" src="./assets/muro.png">
+
+<img id="reflejo" src="./assets/reflejo.png">
+<img id="0j0" src="./assets/0j0.png">
+
+<a-asset-item id="un" src="./assets/untitled.gltf" ></a-asset-item>
+<a-asset-item id="retrete" src="./assets/retrete.gltf" ></a-asset-item>
+
+<a-asset-item id="wc" src="./assets/wc.gltf" ></a-asset-item>
+<a-asset-item id="p1" src="./assets/thedoors.gltf" ></a-asset-item>
+
+<a-asset-item id="living" src="./assets/sillon.gltf" ></a-asset-item>
+
+<a-asset-item id="roblox" src="./assets/roblox.gltf" ></a-asset-item>
+<a-asset-item id="llave" src="./assets/lavabo.gltf" ></a-asset-item>
+
+<a-asset-item id="ente1" src="./assets/ente1.gltf" ></a-asset-item>
+<a-asset-item id="tv" src="./assets/tv.gltf" ></a-asset-item>
+
+<a-asset-item id="mesa" src="./assets/mesa.gltf" ></a-asset-item>
+<a-asset-item id="dedos" src="./assets/dedos.gltf" ></a-asset-item>
+
+<a-asset-item id="luz" src="./assets/luz.gltf" ></a-asset-item>
+<a-asset-item id="lampara" src="./assets/lampara.gltf" ></a-asset-item>
+
+<a-asset-item id="noobs" src="./assets/noobs.gltf" ></a-asset-item>
+<a-asset-item id="madera" src="./assets/madera.gltf" ></a-asset-item>
+
+<a-asset-item id="bajo" src="./assets/bajo.gltf" ></a-asset-item>
+<a-asset-item id="cuarto" src="./assets/cuarto404.gltf" ></a-asset-item>
+
+<a-asset-item id="alberca" src="./assets/alberca.gltf" ></a-asset-item>
+<a-asset-item id="alas" src="./assets/alasglb.gltf" ></a-asset-item>
+
+<a-asset-item id="door" src="./assets/DOOR.gltf" ></a-asset-item>
+
+<a-asset-item id="dross" src="./assets/dross.gltf" ></a-asset-item>
+
+</a-assets>    
+
+
+        <!--piso baño-->
+
+        <a-box src="#pisobaño" rotation="0 0 0" position="17.625 -1.327 -21.48" scale="11.276 1 16.353" ></a-box>
+
+
+              <a-sky color="#494A4D" ></a-sky>  
+
+              <a-entity environment="preset: osiris; groundColor: #445; grid: cross opacity(0.5)"></a-entity>
+ 
+                <a-entity rotation="0 0 0" animation="property: rotation; to: 0 360 0; loop:true; dur:10000">
+                    <a-sphere color="red" position="-15 26 25" scale="3 3 3" ></a-sphere> 
+
+                </a-entity>
+                <a-entity id="sphere" material="color: ##FFC300; shader: flat" position="-6.855 -2.275 -5.03" rotation="0 14 0" animation="property: position; easing: easeInOutQuad; dir: alternate; dur: 1000; to: 0 -0.10 -5; loop: true" src="#bajo" scale="0.5 0.5 0.5">
+
+                    <a-entity gltf-model="#bajo" scale="0.15 0.15 0.15" src="#c1" ></a-entity>
+                    </a-entity>
+
+
+                    <a-entity gltf-model="#living" scale="0.68 0.7 0.68" position="12.269 -1.056 2.159" rotation="0 -159.5 0"></a-entity>
+
+
+<a-entity gltf-model="#ente1" scale="1.2 1.2 1.2" position="5.202 0.725 12.86" rotation="0 0.55 0"></a-entity>
+<a-entity gltf-model="#ente1" scale="1.2 1.2 1.2" position="-3.233 0.75 12.86" rotation="0 0.55 0"></a-entity>
+
+
+                <a-entity geometry="primitive:plane;" position="1.895 3.619  4.901" scale="1.205 1. 1." rotation="0 180 0" material="shader:gif;src:url(./assets/glitch.gif); repeat: 2 2;transparent: true;alphaTest:0.5"></a-entity>
+
+                <a-entity gltf-model="#tv" scale="0.3 0.3 0.3" position="1.9 4.035 3.748" rotation="0 180 0"></a-entity>
+
+
+                <a-entity gltf-model="#madera" scale="4.5 2 2" position="0.983 1 -14.23"rotation="180 180 180"></a-entity>
+                <a-entity gltf-model="#mesa" scale="1.6 1.2 1.6" position="-9.983 -0.217 -17.39" rotation="0 90 0" ></a-entity>
+                
+        <a-entity gltf-model="#roblox" scale="2 2 2" position="1.901 0.985 5.652" rotation="0 90 0"></a-entity>
+        <a-entity gltf-model="#noobs" scale="1.683 1.451 1.413" position="14.274 -0.612 -2.913" rotation="0 20 0"></a-entity>
+     
+                <a-entity gltf-model="#alas" scale="0.4 0.4 0.2" position="2.353 -0.545 6.636"></a-entity>
+                <a-entity gltf-model="#door" scale="0.5 0.5 0.5" position="1.919 4.229 -18.28" rotation="0 -180 0"></a-entity>
+
+        <a-entity gltf-model="#dross" scale="1 1 1" position="0.9 1.5 -10" rotation="0 -34.21 0"></a-entity>
+        <a-entity gltf-model="#alberca" scale="1.8 1.281 1.8" position="1.5 -0.68 -24"></a-entity>
+
+                <a-entity gltf-model="#p1" scale="0.304 0.292 0.406" position="22.282 -1.176 6.447" rotation="0 -90 0"></a-entity>
+                <a-entity gltf-model="#p1" scale="0.304 0.292 0.406" position="22.282 -1.176 -7.114" rotation="0 -90 0"></a-entity>
+                <a-entity gltf-model="#p1" scale="0.304 0.292 0.406" position="22.282 -1.176 -0.704" rotation="0 -90 0"></a-entity>
+                <a-entity gltf-model="#p1" scale="0.304 0.292 0.406" position="-18.74 -1.176 5.602" rotation="0 90 0"></a-entity>
+
+                <a-entity gltf-model="#dedos" scale="1 1 1" position="-11.812 0.981 -14.9" rotation="0 0 0"></a-entity>    
+
+
+                
+                <a-box src="#textura" rotation="0 0 0" position="9.696 1.5 -7.875" scale="12. 5 0.3" ></a-box>
+                <a-box src="#textura" rotation="0 0 0" position="-5. 1.5 -7.941" scale="10. 5 0.3" ></a-box>
+                <a-box src="#textura" rotation="0 0 0" position="24.298 1.5 8.864" scale="9. 5 0.3" ></a-box>
+                
+
+<a-box src="#textura" rotation="0 0 0" position="17.853 1.5 -12.9" scale="12. 5 0.3" ></a-box>
+<a-box src="#textura" rotation="0 0 0" position="3.73 1.5 -7.882" scale="0.5 5 0.6" ></a-box>
+<a-box src="#textura" rotation="0 0 0" position="15.119 1.5 3.875" scale="10. 5 0.3" ></a-box>
+<a-box src="#textura" rotation="0 0 0" position="6.647 1.5 -29.71" scale="10. 5 0.3" ></a-box>
+<a-box src="#textura" rotation="0 0 0" position="-3.53 1.5 -29.7" scale="10. 5 0.3" ></a-box>
+<a-box src="#textura" rotation="0 90 0" position="23.597 1.5 3.356" scale="15. 5 0.3" ></a-box>
+
+<a-box src="#textura" rotation="0 90 0" position="23.597 1.5 -9.407" scale="10. 5 0.3" ></a-box>
+
+<a-box src="#textura" rotation="0 90 0" position="15.531 1.5 -2.068" scale="12. 5 0.3" ></a-box>
+<a-box src="#textura" rotation="0 90 0" position="-20. 1.5 -22.81" scale="13.797 5 0.3" ></a-box>
+<a-box src="#textura" rotation="0 0 0" position="-15.27 1.5 -29.85" scale="13. 5 0.3" ></a-box>
+
+<a-box src="#textura" rotation="0 90 0" position="-14.911 1.5 -15.67" scale="10. 5 0.3" ></a-box>
+<a-box src="#textura" rotation="0 90 0" position="-20.  1.5 -2.183" scale="10. 5 0.3" ></a-box>
+<a-box src="#textura" rotation="0 0 0" position="-14.92 1.5 2.5" scale="10. 5 0.3"  ></a-box>
+<a-box src="#textura" rotation="0 0 0" position="-7.171 1.5 2.449" scale="5. 5 0.3"  ></a-box>
+
+<a-box src="#textura" rotation="0 0 0" position="5.174 1.5 8.864" scale="10. 5 0.3"  ></a-box>
+<a-box src="#textura" rotation="0 90 0" position="11.851 1.5 -17.89" scale="10. 5 0.3"  ></a-box>
+
+
+<a-box src="#textura" rotation="0 90 0" position="-10.2 1.5 -6.634" scale="10. 5 0.3" ></a-box>
+<a-box src="#textura" rotation="0 0 0" position="-15.49 1.5 8.858" scale="10. 5 0.3"  ></a-box>
+<a-box src="#textura" rotation="0 0 0" position="-9.874 1.5 -15.14" scale="10. 5 0.3" ></a-box>
+<a-box src="#textura" rotation="0 0 0" position="14.836 1.5 8.827" scale="10. 5 0.3" ></a-box>
+
+
+                <a-box src="#textura" rotation="0 90 0" position="-20.04 1.5 -12.35" scale="10. 5 0.3" ></a-box>
+
+
+<a-box src="#textura" rotation="0 90 0" position="-4.846 1.5 -15.9" scale="5. 5 0.3" ></a-box>
+<a-box src="#textura" rotation="0 90 0" position="-14.92 1.5 -6.034" scale="10. 5 0.3" ></a-box>
+<a-box src="#textura" rotation="0 90 0" position="-19.99 1.5 7.455" scale="10. 5 0.3"  ></a-box>
+<a-box src="#textura" rotation="0 0 0" position="-5.15 1.5 8.847" scale="10. 5 0.3"  ></a-box>
+
+
+                <a-entity gltf-model="#llave" scale="0.17 0.168 0.113" position="12.948 -1.404 -23.46"rotation="0 -90 0" ></a-entity>
+                <a-entity gltf-model="#llave" scale="0.17 0.168 0.113" position="12.963 -1.404 -20.81" rotation="0 -90 0"></a-entity>
+                <a-entity gltf-model="#llave" scale="0.17 0.168 0.113" position="12.988 -1.404 -18.13" rotation="0 -90 0"></a-entity>
+                <a-entity gltf-model="#llave" scale="0.17 0.168 0.113" position="12.987 -1.404 -15.43" rotation="0 -90 0"></a-entity>
+
+<!--muros-->
+
+<a-box color="#72754F" rotation="0 90 0" position="11.802 1.5 -23.88" scale="2.06 5. 0.3" ></a-box>
+
+<a-box color="#72754F" rotation="0 90 0" position="11.802 1.5 -29.33" scale="2.35 5. 0.3" ></a-box>
+
+<a-cylinder position="-11.65 0.959 -14.92" radius="0.5" scale="2.31 0.14 2.94" color="#6E6641 " rotation="-90 0 -180"></a-cylinder>
+
+
+
+<a-box src="#muro" rotation="0 0 0" position="1.586 1.5 -29.67" scale="0.5 5 0.6" ></a-box>
+
+
+<a-box src="#muro" rotation="0 0 0" position="-8.633 1.5 -29.69" scale="0.5 5 0.6" ></a-box>
+
+
+<a-box src="#muro" rotation="0 0 0" position="-4.874 1.5 -13.34" scale="0.5 5 0.6" ></a-box>
+
+<a-box src="#muro" rotation="0 0 0" position="9.602 1.5 8.726" scale="0.5 5 0.6" ></a-box>
+<a-box src="#muro" rotation="0 0 0" position="0 1.5 -7.936" scale="0.5 5 0.6" ></a-box>
+<a-box src="#muro" rotation="0 0 0" position="3.73 1.5 -7.882" scale="0.5 5 0.6" ></a-box>
+
+<a-box src="#muro" rotation="0 0 0" position="10.099 1.5 3.818" scale="0.5 5 0.6" ></a-box>
+<a-box src="#muro" rotation="0 0 0" position="23.597 1.5 -10.33" scale="0.5 5 0.6" ></a-box>
+<a-box src="#muro" rotation="0 0 0" position="23.597 1.5 3.453" scale="0.5 5 0.6" ></a-box>
+
+<a-box src="#muro" rotation="0 0 0" position="23.489 1.5 -4.358" scale="0.5 5 0.6" ></a-box>
+<a-box src="#muro" rotation="0 0 0" position="-10.2 1.5 -11.48" scale="0.5 5 0.6" ></a-box>
+<a-box src="#muro" rotation="0 0 0" position="19.821 1.5 8.882" scale="0.5 5 0.6" ></a-box>
+
+<a-box src="#muro" rotation="0 0 0" position="11.691 1.6 -12.92" scale="0.5 5 0.6" ></a-box>
+
+<a-box src="#muro" rotation="0 0 0" position="-9.813 1.5 2.473" scale="0.5 5 0.6" ></a-box>
+<a-box src="#muro" rotation="0 0 0" position="-10.2 1.5 -1.658" scale="0.5 5 0.6" ></a-box>
+<a-box src="#muro" rotation="0 0 0" position="-14.9 1.5 -1.128" scale="0.5 5 0.6" ></a-box>
+<a-box src="#muro" rotation="0 0 0" position="-19.91 1.5 -7.093" scale="0.5 5 0.6" ></a-box>
+<a-box src="#muro" rotation="0 0 0" position="-19.91 1.5 -15.96" scale="0.5 5 0.6" ></a-box>
+<a-box src="#muro" rotation="0 0 0" position="-14.92 1.5 -20.42" scale="0.5 5 0.6" ></a-box>
+<a-box src="#muro" rotation="0 0 0" position="-4.887 1.5 -18.38 " scale="0.5 5 0.6" ></a-box>
+<a-box src="#muro" rotation="0 0 0" position="20.104 1.5 3.93" scale="0.5 5 0.6" ></a-box>
+<a-box src="#muro" rotation="0 0 0" position="-0.055 1.5 8.726" scale="0.5 5 0.6" ></a-box>
+<a-box src="#muro" rotation="0 0 0" position="-10.39 1.5 8.847" scale="0.5 5 0.6" ></a-box>
+<a-box src="#muro" rotation="0 0 0" position="-14.92 1.5 -10.42" scale="0.5 5 0.6" ></a-box>
+
+<a-box src="#muro" rotation="0 0 0" position="-4.684 1.5 2.393" scale="0.5 5 0.6" ></a-box>
+
+        <!--gif-->  
+        <a-entity gltf-model="#lampara" scale="0.19 0.19 0.19" position="23.429 2.859 -9.49" rotation="0 -90 0" ></a-entity>
+        <a-entity gltf-model="#lampara" scale="0.19 0.19 0.19" position="23.429 2.859 -5.416" rotation="0 -90 0"  ></a-entity>
+        <a-entity gltf-model="#lampara" scale="0.19 0.19 0.19" position="23.429 2.859 -2.687" rotation="0 -90 0"  ></a-entity>
+        <a-entity gltf-model="#lampara" scale="0.19 0.19 0.19" position="23.429 2.859 1.236" rotation="0 -90 0"  ></a-entity>
+        <a-entity gltf-model="#lampara" scale="0.19 0.19 0.19" position="23.429 2.859 4.459" rotation="0 -90 0"  ></a-entity>
+        <a-entity gltf-model="#lampara" scale="0.19 0.19 0.19" position="23.429 2.859 8.102" rotation="0 -90 0"  ></a-entity>
+
+        <a-entity gltf-model="#lampara" scale="0.19 0.19 0.19" position="-19.93 2.859 3.916" rotation="0 90 0"  ></a-entity>
+
+        <a-entity gltf-model="#lampara" scale="0.19 0.19 0.19" position="-19.93 2.859 7.753" rotation="0 90 0"  ></a-entity>
+
+
+<a-entity gltf-model="#luz" scale="2 1.097 2" position="13.848 0.529 2.64" ></a-entity>
+<a-entity gltf-model="#luz" scale="2 1. 2" position="-7.187 0.411 -16.64" ></a-entity>
+<a-entity gltf-model="#luz" scale="2 1. 2" position="-13.28 0.411 -16.64" rotation="0 0 0 "></a-entity>
+
+        <a-entity gltf-model="#wc" scale="0.6 0.6 0.6" position="21.726 0.63 -14.143" rotation="0 -90 0"></a-entity>
+        <a-entity gltf-model="#wc" scale="0.6 0.6 0.6" position="21.721 0.63 -20.48" rotation="0 -90 0"></a-entity>
+        <a-entity gltf-model="#wc" scale="0.6 0.6 0.6" position="21.721 0.63 -22.95" rotation="0 -90 0"></a-entity>
+        <a-entity gltf-model="#wc" scale="0.6 0.6 0.6" position="21.721 0.334 -25.66" rotation="0 -90 0"></a-entity>
+        <a-entity gltf-model="#wc" scale="0.6 0.6 0.6" position="21.721 0.334 -27.8" rotation="0 -90 0"></a-entity>
+        <a-entity gltf-model="#wc" scale="0.6 0.6 0.6" position="21.721 0.334 -17.143" rotation="0 -90 0"></a-entity>
+
+        <a-sphere src="#ollo" position="-7.229 -0.914 -4.365" scale="2 0.1 2" rotation="0 0 0"></a-sphere>
+
+        <a-box src="#exit" rotation="0 0 0" position="15.738 2.716 -6.496" scale="0.095 0.901 1.5" ></a-box>
+        <a-box src="#exit" rotation="0 180 0" position="-19.84 2.758 0.578" scale="0.095 0.901 1.5" ></a-box>
+
+        <a-box src="#ev" rotation="90 0 180" position="4.969 2.556 -7.818" scale="0.946 0.2 0.46" ></a-box>
+        <a-box src="#ev" rotation="90 0 180" position="13.294 2.556 -12.81" scale="0.946 0.2 0.46" ></a-box>
+        
+<a-box src="#0j0" rotation="0 0 0" position="16.6 2.042 1.95" scale="1 1 1" ></a-box>
+
+<a-box src="#1" rotation="0 0 0" position="16.6 2.042 1.95" scale="1 1 1" ></a-box>
+<a-box src="#2" rotation="0 0 0" position="17.653 2.014 0.249" scale="1 1 1" ></a-box>
+<a-box src="#k" rotation="0 0 0" position="17.46 0.8 1.145" scale="0.914 1 1.5" ></a-box>
+
+        <a-box src="#alfombra" rotation="0 0 0" position="2.5 -1.5 -12.8" scale="55 1 55" ></a-box>
+
+        <a-box src="#reflejo" rotation="0 90 0" position="12.279 2.414 -19.199" scale="10.03  2.043  0.318" ></a-box>
+     
+        <a-box src="#espejo" rotation="0 90 -90" position="12.202 2.384 -19.162" scale="2.6 11 0.318" ></a-box>
+
+        <a-box color="#8C9192" rotation="0 0 0" position="20.973 1.5 -18.93" scale="4.604 5 0.2" ></a-box>
+        <a-box color="#8C9192" rotation="0 0 0" position="20.973 1.5 -21.93" scale="4.604 5 0.2" ></a-box>
+        <a-box color="#8C9192" rotation="0 0 0" position="20.973 1.5 -24.54" scale="4.604 5 0.2" ></a-box>
+        <a-box color="#8C9192" rotation="0 0 0" position="20.973 1.5 -26.9" scale="4.604 5 0.2" ></a-box>
+        <a-box color="#8C9192" rotation="0 0 0" position="20.973 1.5 -16.16 " scale="4.604 5 0.2" ></a-box>
+
+<!--paret2-->
+<a-box color="#8C9192" rotation="0 90 0" position="23.3 1.5 -22.43" scale="18.733 5 0.3" ></a-box>
+
+<a-box color="#8C9192" rotation="0 0 0" position="17.599 1.5 -29.7" scale="11.984 5 0.3" ></a-box>
+
+        <!--paret1-->
+        <a-box color="#7E8988" rotation="0 90 0" position="12.142 1.5 -19.13 " scale="11.984 5 0.3" ></a-box>
+        <a-box color="#7E8988" rotation="0 0 0" position="17.853 1.5 -13.18" scale="11.984 5 0.3" ></a-box>
+
+ <!--puerta baño -->
+ <a-entity gltf-model="#un" scale="0.304 0.404 0.464" position="13.165 -1.116 -24.9" rotation="0 0 0"></a-entity>
+
+ <a-entity gltf-model="#retrete" scale="0.565 0.49 0.1" position="18.824 -0.984 -28.27" rotation="0 90 0"></a-entity>
+ <a-entity gltf-model="#retrete" scale="0.448 0.49 0.1" position="18.824 -0.984 -25.74" rotation="0 90 0"></a-entity>
+ <a-entity gltf-model="#retrete" scale="0.51 0.49 0.1" position="18.824 -0.984 -23.24" rotation="0 90 0"></a-entity>
+ <a-entity gltf-model="#retrete" scale="0.565 0.49 0.1" position="18.824 -0.984 -28.27" rotation="0 90 0"></a-entity>
+ <a-entity gltf-model="#retrete" scale="0.566 0.49 0.1" position="18.824 -0.984 -17.562" rotation="0 90 0"></a-entity>
+ <a-entity gltf-model="#retrete" scale="0.565 0.49 0.1" position="18.824 -0.984 -14.76" rotation="0 90 0"></a-entity>
+ <a-entity gltf-model="#retrete" scale="0.582 0.49 0.1" position="18.824 -0.984 -20.48" rotation="0 90 0"></a-entity>
+
+
+         <!--hydra1-->
+<a-box color="blue" rotation="89.561  0 0 " scale="4.63 1.3 6.41" position="2.15 8.61 -21.36"></a-box>
+
+</a-scene>
+    
+            </body>
+            </html>
