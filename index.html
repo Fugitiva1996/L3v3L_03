@@ -24,13 +24,20 @@
      <script  src ="https://unpkg.com/aframe-spritesheet-component/dist/aframe-spritesheet-component.min.js " ></script> 
  
 <script src="https://cdn.jsdelivr.net/gh/n5ro/aframe-physics-system@v$npm_package_version/dist/aframe-physics-system.min.js"></script>
-
-         
-         <a-scene>
- 
+           
+    <style> 
         
-             
-             
+    a-scene {
+  height: 300px;
+  width: 600px;
+}
+    </style>
+    
+         <body>
+  <div id="myEmbeddedScene">
+    <a-scene embedded>
+   
+           
 <a-assets>
 
     
@@ -634,8 +641,7 @@
 -->
 
 
-
-</a-scene>
-    
-            </body>
+  </a-scene>
+  </div>
+</body>
             </html>
